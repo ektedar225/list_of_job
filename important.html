@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            padding: 40px 30px;
+            max-width: 400px;
+            text-align: center;
+        }
+        .birthday-title {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+            color: #ff4e50;
+            margin-bottom: 10px;
+        }
+        .message-space {
+            margin: 20px 0;
+            min-height: 60px;
+            font-size: 1.1rem;
+            color: #333;
+            border: 2px dashed #ff4e50;
+            border-radius: 12px;
+            padding: 15px;
+            background: #fff8e1;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.95rem;
+            color: #fff;
+            opacity: 0.8;
+        }
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.5);
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="https://videos.pexels.com/video-files/3827604/3827604-uhd_1440_2560_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="card">
+        <div class="birthday-title">Happy Birthday!</div>
+        <div class="message-space">Dear Billa, wishing you the happiest birthday. Is saal jo aapne kuwaab dekhe hai inshallah wo sach ho ,or mai allah se dua karunga ki aap ek achi se zindagi guzare , or ye bhi mangu ga ki allah ,apki internship or job achi se company me lagwa de </div>
+        <div style="margin-top: 20px; color: #ff4e50; font-weight: bold;">Wishing you a day filled with love, joy, and laughter!</div>
+    </div>
+    <div class="footer">Made with ❤️ for a special friend</div>
+</body>
+</html>
